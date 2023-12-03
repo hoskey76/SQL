@@ -1,6 +1,5 @@
 Project description
-An organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed.
-The following steps provide examples of how I used SQL with filters to perform security-related tasks.
+An organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks.
 
 
   Retrieve after hours failed login attempts
@@ -10,9 +9,7 @@ The following steps provide examples of how I used SQL with filters to perform s
   
     SELECT * FROM log_in_attempts WHERE login_time > ‘18:00’ AND success = FALSE;
   
-    This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator
-    to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is login_time > '18:00', which filters for the login attempts that occurred 
-    after 18:00. The second condition is success = FALSE, which filters for the failed login attempts. 
+    This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is login_time > '18:00', which filters for the login attempts that occurred after 18:00. The second condition is success = FALSE, which filters for the failed login attempts. 
   
   
   Retrieve login attempts on specific dates
